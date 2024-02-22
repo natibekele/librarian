@@ -40,7 +40,6 @@ function App() {
       return a.first_publish_year - b.first_publish_year;
     });
     setBooksByPublish(toSort);
-    console.log(toSort.length);
     setLoading(false);
   };
 
@@ -60,9 +59,6 @@ function App() {
       translateX: 0,
     });
   }, []);
-  useEffect(() => {
-    console.log(sortMode);
-  }, [sortMode]);
 
   return (
     <div className="container">

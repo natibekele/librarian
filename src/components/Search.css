@@ -20,6 +20,8 @@
     border: solid 2px powderblue;
 }
 
-@media (max-width: 800px) {
-    width: 32rem;
+@media(max-width: 800px) {
+    .search {
+        width: 32rem;
+    }
 }
