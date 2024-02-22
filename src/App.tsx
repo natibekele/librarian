@@ -76,12 +76,8 @@ function App() {
       <WavyCircleLoader visible={loading} />
       <div className="book-grid">
         {sortMode === "default"
-          ? bookResults.map((book, index) => (
-              <BookCard key={uuid()} {...book} />
-            ))
-          : booksByPublish.map((book, index) => (
-              <BookCard key={uuid()} {...book} />
-            ))}
+          ? bookResults.map((book) => <BookCard key={uuid()} {...book} />)
+          : booksByPublish.map((book) => <BookCard key={uuid()} {...book} />)}
       </div>
     </div>
   );
