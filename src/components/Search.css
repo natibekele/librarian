@@ -1,0 +1,25 @@
+.search {
+    padding: 1.5rem 2rem;
+    width: 40rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border-width: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    outline: none;
+    transform: scaleX(0);
+    opacity: 0;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+}
+
+.search:focus {
+    border: solid 2px powderblue;
+}
+
+@media (max-width: 800px) {
+    width: 32rem;
+}
