@@ -1,8 +1,7 @@
-import React, { MouseEventHandler, useEffect } from "react";
+import React, { useEffect } from "react";
 import anime from "animejs";
 import { Book } from "../types/BookInterfaces";
 import "./Book.css";
-import { v4 as uuid } from "uuid";
 
 export const BookCard: React.FC<Book> = (book) => {
   const {
